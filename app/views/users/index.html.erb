@@ -5,8 +5,8 @@
 <% @users.each do |user| %>
   <div class="card my-5 p-5">
     <%= render user %>
-    <p><%= link_to "user", user %></p>
+    <p><%= link_to "Show user", user, class: "btn btn-sm btn-outline-dark" %></p>
   </div>
 <% end %>
 
-<%= link_to "New user", new_user_path %>
+<%= link_to "New user", new_user_path, class: "btn btn-sm btn-outline-dark" %>
