@@ -3,7 +3,7 @@ class UsersController < ApplicationController
 
   def index
     # debugger
-    @users = User.all
+    @users = User.all.order(id: :desc)
   end
 
   def show
