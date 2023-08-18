@@ -2,13 +2,11 @@
 
 <h1>Posts</h1>
 
-<div id="posts">
-  <% @posts.each do |post| %>
-    <%= render post %>
-    <p>
-      <%= link_to "Show this post", post %>
-    </p>
-  <% end %>
+<% @posts.each do |post| %>
+<div class="card my-5 p-5">  
+  <%= render post %>
+  <p><%= link_to "post", post %></p>
 </div>
+<% end %>
 
 <%= link_to "New post", new_post_path %>
