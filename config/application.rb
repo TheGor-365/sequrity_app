@@ -13,6 +13,8 @@ module SequrityApp
 
     # config.force_ssl = true
 
+    config.action_view.sanitized_allowed_tags = ['strong']
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files

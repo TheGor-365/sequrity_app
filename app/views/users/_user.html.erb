@@ -2,7 +2,7 @@
   <h5 class="text-muted">
     Name
   </h5>
-  <%= user.name %>
+  <%= strip_tags(user.name.html_safe) %>
 
   <br><hr class="my-5">
 
