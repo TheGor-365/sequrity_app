@@ -69,4 +69,6 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
 
   # config.action_controller.defolt_protect_from_forgery = true
+  
+  # config.action_controller.default_protect_from_forgery = true
 end
